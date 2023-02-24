@@ -7,7 +7,4 @@
    <FileRef
       location = "group:AmityUIKitLiveStream/AmityUIKitLiveStream.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:SampleApp/SampleApp.xcodeproj">
-   </FileRef>
 </Workspace>
