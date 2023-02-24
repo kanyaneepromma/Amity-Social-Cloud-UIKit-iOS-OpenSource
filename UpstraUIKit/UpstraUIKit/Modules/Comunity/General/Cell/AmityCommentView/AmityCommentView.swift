@@ -100,6 +100,17 @@ class AmityCommentView: AmityView {
     func configure(with comment: AmityCommentModel, layout: AmityCommentView.Layout) {
         self.comment = comment
         
+        if !comment.isParent {
+            replyButton.tintColor = .white
+            replyButton.setTitleColor(.white, for: .selected)
+            replyButton.setTitleColor(.white, for: .normal)
+            replyButton.setImage(UIImage(), for: .normal)
+            replyButton.setTitleFont(UIFont.systemFont(ofSize: 0))
+            replyButton.setInsets(forContentPadding: .zero, imageTitlePadding: 0)
+            likeButton.setInsets(forContentPadding: .zero, imageTitlePadding: 0)
+            optionButton.setInsets(forContentPadding: .zero, imageTitlePadding: 0)
+        }
+        
         if comment.isEdited {
             timeLabel.text = String.localizedStringWithFormat(AmityLocalizedStringSet.PostDetail.postDetailCommentEdit.localizedString, comment.createdAt.relativeTime)
         } else {
