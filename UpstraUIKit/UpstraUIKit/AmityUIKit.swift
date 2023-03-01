@@ -1,6 +1,6 @@
 //
 //  AmityUIKit.swift
-//  AmityUIKit
+//  AmityUIKit 
 //
 //  Created by Sarawoot Khunsri on 2/6/2563 BE.
 //  Copyright © 2563 Amity Communication. All rights reserved.
